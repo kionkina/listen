@@ -1,0 +1,29 @@
+
+'''
+LIST COMPREHENSIONS: python's syntactic sugar for
+transforming list-processing loops into 
+something resembling mathematical set notation
+
+A list comprehension consits of brackets containing expression
+followed by a for clause,
+then zero or more for or if clauses.
+
+Result will be a new list
+resulting from evaluating the expression 
+in the context of the for and if clauses which follow it
+
+print [x*x for x in range(8)]
+print [ (x, x*x, x*x*x) for x in range(8)]
+p = "myNoobPass1234"
+print [x for x in p]
+print [x for x in "1234"]
+
+# {x| ENTER CONDITION HERE } 
+# ARBEITSABLAUF : workflow
+
+UC_LETTERS = "QWERTYUIOPASDFGHJKKLZXCVBNM"
+
+print [x for x in p if x in UC_LETTERS] #['N', 'P']
+print [1 for x in p if x in UC_LETTERS] #[1,1]
+print [1 if x in UC_LETTERS else 0 for x in p] #[0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+'''
